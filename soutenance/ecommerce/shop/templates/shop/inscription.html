@@ -1,0 +1,48 @@
+{% extends "shop/base.html" %}
+{% block content %}
+<style>
+    .btnbtn{
+        background-color:  rgb(25, 135, 84);
+        border-radius: 5px;
+        border-color:  rgb(25, 135, 84);
+        color: white;
+    }
+    .btnbtn:hover{
+        background-color:rgb(118, 158, 7) ;
+        border-radius: 5px;
+        color: black;
+    }
+</style>
+    <div class="w-50 mx-auto vh-100 d-flex align-items-center" >
+        <form method="post" action="" class=" row gx-2  gy-2 px-2 py-3 bg-light border rounder " id="formulaire" style="background-color: rgb(208, 223, 214) ;">
+            <h3 class="col-12 text-center">Creer votre compte </h3>
+            <div class="col-6">
+                <p>Numero de CNI:<input  type="text" name="cni"placeholder="Entrer votre numero de CNI" class="form-control" required/></p> <br>
+            </div>
+            <div class="col-6">
+                <p>Nom <input  type="text" name="nom"placeholder="Entrer votre nom" class="form-control" required/></p> <br>
+            </div>
+            <div class="col-6">
+                <p> Pseudo<input  type="text" name="pseudo"placeholder="Entrer votre nom" class="form-control" required/></p> <br>
+            </div>
+            <div class="col-6" >
+                <p>Prenom : <input type="text" name="prenom" placeholder="Entrer votre prenom"  class="form-control" required></p><br>
+            </div>
+            <div class="col-6">
+                <p> Mot de passe:<input type="password" name="password" class="form-control" placeholder="Entrer votre mot de passe" required maxlength="8"/></p> <br>
+            </div>
+            <div class="col-6">
+                <p>Adresse: <input type="text" name="adresse" placeholder="Entrer votre adresse" class="form-control" required></p><br>
+            </div>
+            <div class="col-6">
+                <p> E-mail:<input type="email" name="email" class="form-control" placeholder="Entrer votre e-mail" required/></p> <br>
+            </div>
+            <div class="col-6">
+                <p> Numero telephone: <input type="number" name="numtel" class="form-control" placeholder="Numero de telephone" /></p> <br>
+            </div> <br> <br>
+            
+            <button type="submit" class="btnbtn col-6"> S'inscrire</button>
+            <button type="submit" class="btnbtn col-6"> Annuler</button>
+        </form>
+    </div>
+{% endblock %}
